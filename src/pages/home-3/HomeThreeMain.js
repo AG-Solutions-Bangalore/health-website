@@ -13,6 +13,8 @@ import Video from "./VideoSection";
 import Work from "./WorkSection";
 import VitalsMonitor from "./VitalsMonitor";
 import PointofCare from "./PointofCare";
+import VitalSignMonitor from "./VitalSignMonitor";
+import FaqDropDown from "./FaqDropDown";
 
 const HomeThreeMain = () => {
   return (
@@ -20,7 +22,10 @@ const HomeThreeMain = () => {
       <Banner />
       <FunFact />
       <VitalsMonitor />
-      <PointofCare/>
+      <PointofCare />
+      <VitalSignMonitor />
+      <FaqDropDown />
+
       <Category />
       <About />
       <FunFact />
