@@ -1,21 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import RightArrow from "../../components/SVG";
 
-import aboutImg1 from "../../assets/img/about/ed-about-2-1.png";
-import aboutImg2 from "../../assets/img/about/ed-about-2-3.png";
-import aboutImg3 from "../../assets/img/product/point-of-care.png";
 import shapeImg1 from "../../assets/img/about/ed-shape-2-1.png";
 import shapeImg2 from "../../assets/img/about/ed-shape-2-2.png";
-import titleImg from "../../assets/img/about/title-home2.png";
+import aboutImg3 from "../../assets/img/product/point-of-care.png";
+import aboutImg4 from "../../assets/img/product/vocare-device.png";
 
 const PointofCare = () => {
   return (
     <div id="it-about" className="it-about-3-area fix pt-120 pb-120 p-relative">
-      <div className="container">
-        <h2 className="it-section-title-3 pb-30">
-          VoCare solves your <span>“tele”</span> problems all of them…
-        </h2>
+      <div className="container  mb-30">
+        <div className="flex justify-center">
+          <h2 className="text-center it-section-title-3 pb-30">
+            VoCare solves your <span>“tele”</span> problems all of them…
+          </h2>
+        </div>
+
         <div className="row align-items-center">
           <div
             className="col-xl-6 col-lg-6 wow animate__fadeInLeft"
@@ -46,48 +45,149 @@ const PointofCare = () => {
             data-wow-delay=".7s"
           >
             <div className="it-about-3-title-box">
-              <span className="it-section-subtitle-3">
-                <img src={titleImg} alt=""></img> about us
-              </span>
-              <h2 className="it-section-title-3 pb-30">
-                Benefit from our online learning expertise earn{" "}
-                <span>professional</span>
-              </h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                <br />
-                eiusmod tempor incididunt ut labore.
-              </p>
-            </div>
-            <div className="it-about-3-mv-box">
-              <div className="row">
-                <div className="col-xl-6 col-md-6">
-                  <div className="it-about-3-mv-item">
-                    <span className="it-about-3-mv-title">OUR MISSION:</span>
-                    <p>
-                      Suspendisse ultrice gravida dictum fusce placerat
-                      ultricies integer quis auctor elit sed vulputate mi sit.
-                    </p>
-                  </div>
-                </div>
-                <div className="col-xl-6 col-md-6">
-                  <div className="it-about-3-mv-item">
-                    <span className="it-about-3-mv-title">OUR VISSION:</span>
-                    <p>
-                      Suspendisse ultrice gravida dictum fusce placerat
-                      ultricies integer quis auctor elit sed vulputate mi sit.
-                    </p>
-                  </div>
-                </div>
+              <div className="it-choose-content">
+                <h2 className="it-section-title-3 pb-30">Point of Care</h2>{" "}
+                <h5>
+                  <i className="fa-solid fa-circle-check"></i>This mode can be
+                  used by clinicians caring for multiple patients. In this mode,
+                  the Vitals360 vital signs monitor replaces a number of
+                  separate medical devices, making it ideal for care both inside
+                  and outside of an office or facility.
+                </h5>
+                <h5>
+                  <i className="fa-solid fa-circle-check"></i>Unlike other
+                  medical devices that require manual entry of data, the
+                  Vitals360 patient monitors can be linked directly to the
+                  HIPAA-compliant VoCare Cloud via 4G LTE cellular and Wi-Fi
+                  connectivity to allow patient monitor data to be automatically
+                  uploaded after every use.
+                </h5>
+                <h5>
+                  <i className="fa-solid fa-circle-check"></i>Additionally, the
+                  Vitals360’s GPS location and time-stamping provide a superior
+                  audit trail for Medicare reimbursement.
+                </h5>
               </div>
             </div>
-            <div className="it-about-3-btn-box p-relative">
-              <Link className="ed-btn-theme theme-2" to="/about-us">
-                Admission open
-                <i>
-                  <RightArrow />
-                </i>
-              </Link>
+          </div>
+        </div>
+      </div>
+      <div className="container ">
+        <div className="row align-items-center">
+          <div
+            className="col-xl-6 col-lg-6 wow animate__fadeInLeft"
+            data-wow-duration=".9s"
+            data-wow-delay=".5s"
+          >
+            {" "}
+            <div className="it-about-3-title-box  mb-30">
+              <div className="it-choose-content">
+                <h2 className="it-section-title-3 pb-30">
+                  Remote Health Monitoring
+                </h2>{" "}
+                <h5>
+                  <i className="fa-solid fa-circle-check"></i>On-device software
+                  maintained by VoCare
+                </h5>
+                <h5>
+                  <i className="fa-solid fa-circle-check"></i>What we monitor:
+                  Pulse, Oximetry, Blood Pressure, EKG,
+                </h5>
+                <h5>
+                  <i className="fa-solid fa-circle-check"></i>Temperature, and
+                  Weight (device also measures blood glucose-not yet available
+                  in the United States).
+                </h5>
+                <h5>
+                  <i className="fa-solid fa-circle-check"></i>In Remote Mode,
+                  patients can use the Vitals360’s® video feature to conduct
+                  convenient tele-health visits right on the device.
+                </h5>
+                <h5>
+                  <i className="fa-solid fa-circle-check"></i>Lone worker
+                  monitoring with GPS and WiFi tracking capability..
+                </h5>
+              </div>
+            </div>
+            <div className="it-about-3-title-box">
+              <div className="it-choose-content">
+                <h2 className="it-section-title-3 pb-30">Deployment</h2>{" "}
+                <h5>
+                  <i className="fa-solid fa-circle-check"></i>One Vital Signs
+                  Device
+                </h5>
+                <h5>
+                  <i className="fa-solid fa-circle-check"></i>User training –
+                  See videos
+                </h5>
+                <h5>
+                  <i className="fa-solid fa-circle-check"></i>Connected,
+                  activated and ready to use
+                </h5>
+                <h5>
+                  <i className="fa-solid fa-circle-check"></i>User friendly
+                </h5>
+                <h5>
+                  <i className="fa-solid fa-circle-check"></i>Reliable
+                </h5>
+                <h5>
+                  <i className="fa-solid fa-circle-check"></i>Secure
+                </h5>
+                <h5>
+                  <i className="fa-solid fa-circle-check"></i>Scalable (1 to 1
+                  M, Cloud infrastructure) (AWS).
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div
+            className="col-xl-6 col-lg-6 wow animate__fadeInLeft"
+            data-wow-duration=".9s"
+            data-wow-delay=".5s"
+          >
+            {" "}
+            <div className="it-about-3-title-box  mb-30">
+              <div className="it-choose-content">
+                <h2 className="it-section-title-3 pb-30">
+                  Tele-health Solution
+                </h2>{" "}
+                <h5>
+                  <i className="fa-solid fa-circle-check"></i>Nothing to
+                  download
+                </h5>
+                <h5>
+                  <i className="fa-solid fa-circle-check"></i>One-click
+                  connection
+                </h5>
+                <h5>
+                  <i className="fa-solid fa-circle-check"></i>Supports all major
+                  video conference services.
+                </h5>
+              </div>
+            </div>
+            <div className="it-about-3-title-box">
+              <div className="it-choose-content">
+                <h2 className="it-section-title-3 pb-30">Connection</h2>{" "}
+                <h5>
+                  <i className="fa-solid fa-circle-check"></i>LTE (Global
+                  Coverage Map) T-Mobile, World Wide
+                </h5>
+                <h5>
+                  <i className="fa-solid fa-circle-check"></i>WiFi (when LTE is
+                  not available)
+                </h5>
+                <h5>
+                  <i className="fa-solid fa-circle-check"></i>Cloud Integration
+                  services through partners, including Application Programming
+                  Interfaces (API), an FDA listed Class I Medical Device Data
+                  System (880.6310) as well as custom solutions to provide a
+                  device and platform that allows our customers to define and
+                  deliver solutions for their respective space of influence.
+                </h5>
+              </div>
+            </div>
+            <div className="ed-about-2-thumb-two text-start">
+              <img src={aboutImg4} alt="" />
             </div>
           </div>
         </div>
