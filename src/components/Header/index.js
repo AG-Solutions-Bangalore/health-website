@@ -1,14 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import MenuItems from './MenuItems';
-import MenuItemsOnePage from './MenuItemsOnePage';
-import RightArrow from '../SVG';
-import OffCanvasInsta from '../OffCanvas';
-
-import Logo from '../../assets/img/logo/logo-black.png';
-import svgImg1 from '../../assets/img/header/1.svg';
-import svgImg2 from '../../assets/img/header/2.svg';
-import svgImg3 from '../../assets/img/header/3.svg';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import MenuItems from "./MenuItems";
+import MenuItemsOnePage from "./MenuItemsOnePage";
+import RightArrow from "../SVG";
+import Logo from "../../assets/img/logo/logo-black.png";
+import svgImg1 from "../../assets/img/header/1.svg";
+import svgImg2 from "../../assets/img/header/2.svg";
+import svgImg3 from "../../assets/img/header/3.svg";
 
 const Header = (props) => {
   const { headerClass, headerLogo, onePage, parentMenu } = props;
@@ -16,7 +14,6 @@ const Header = (props) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Sticky Header is displayed after scrolling for 400 pixels
     const toggleVisibility = () => {
       if (window.scrollY > 400) {
         setIsVisible(true);
@@ -24,13 +21,13 @@ const Header = (props) => {
         setIsVisible(false);
       }
     };
-    window.addEventListener('scroll', toggleVisibility);
-    return () => window.removeEventListener('scroll', toggleVisibility);
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
   return (
     <>
-      <header className={headerClass ? headerClass : 'it-header-height'}>
+      <header className={headerClass ? headerClass : "it-header-height"}>
         <div className="ed-header-top-area ed-header-top-height black-bg-2">
           <div className="container">
             <div className="row">
@@ -173,8 +170,8 @@ const Header = (props) => {
           id="header-sticky"
           className={
             isVisible
-              ? 'ed-header-area ed-header-ptb header-sticky'
-              : 'ed-header-area ed-header-ptb'
+              ? "ed-header-area ed-header-ptb header-sticky"
+              : "ed-header-area ed-header-ptb"
           }
         >
           <div className="container">
@@ -241,7 +238,7 @@ const Header = (props) => {
       </header>
 
       <div className="it-offcanvas-area">
-        <div className={isOffCanvasOpen ? 'itoffcanvas opened' : 'itoffcanvas'}>
+        <div className={isOffCanvasOpen ? "itoffcanvas opened" : "itoffcanvas"}>
           <div className="it-offcanva-bottom-shape d-none d-xxl-block"></div>
           <div className="itoffcanvas__close-btn">
             <button
@@ -314,7 +311,6 @@ const Header = (props) => {
               </div>
             </div>
           </div>
-          <OffCanvasInsta />
         </div>
       </div>
 

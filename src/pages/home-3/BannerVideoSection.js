@@ -30,7 +30,7 @@ const Video = () => {
          
 
                 <p className="text-white flex-grow-1 mb-3 md:mb-0">
-                  How does the VoCare Vitals V360 Mobile Vital Signs
+                  How does the VoCare  Vitals V360 Mobile Vital Signs
                   Monitor Operate?
                 </p>
 

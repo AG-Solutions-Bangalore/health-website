@@ -7,7 +7,7 @@ import aboutImg4 from "../../assets/img/product/vocare-device.png";
 
 const PointofCare = () => {
   return (
-    <div id="it-about" className="it-about-3-area fix pt-120 pb-120 p-relative">
+    <div id="it-about" className="it-about-3-area fix pt-120 pb-100 p-relative">
       <div className="container  mb-30">
         <div className="flex justify-center">
           <h2 className="text-center it-section-title-3 pb-30">

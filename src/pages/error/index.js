@@ -1,14 +1,14 @@
-import React from 'react';
-import HeaderFive from '../../components/Header/HeaderFive';
-import ErrorMain from './ErrorMain';
-import FooterTwo from '../../components/Footer/FooterTwo';
+import React from "react";
+import HeaderThree from "../../components/Header/HeaderThree";
+import ErrorMain from "./ErrorMain";
+import FooterTwo from "../../components/Footer/FooterTwo";
 
-import Logo from '../../assets/img/logo/logo-white-2.png';
+import Logo from "../../assets/img/logo/logo-white-3.png";
 
 const Error = () => {
   return (
     <>
-      <HeaderFive />
+      <HeaderThree onePage={true} parentMenu="home" />
 
       <ErrorMain />
 

@@ -2,13 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import footerBG from '../../assets/img/footer/bg-1-1.jpg';
-import Logo from '../../assets/img/logo/logo-white-2.png';
-import footerImg1 from '../../assets/img/footer/thumb-1-1.png';
-import footerImg2 from '../../assets/img/footer/thumb-1-2.png';
-import footerImg3 from '../../assets/img/footer/thumb-1-3.png';
-import footerImg4 from '../../assets/img/footer/thumb-1-4.png';
-import footerImg5 from '../../assets/img/footer/thumb-1-5.png';
-import footerImg6 from '../../assets/img/footer/thumb-1-6.png';
+import Logo from '../../assets/img/logo/logo-white-3.png';
+
 
 const FooterTwo = (props) => {
   const { footerClass, footerLogo, btnClass, copyrightTextClass } = props;
@@ -159,7 +154,7 @@ const FooterTwo = (props) => {
               >
                 <div className="it-footer-widget footer-col-4">
                   <h4 className="it-footer-title">Gallery</h4>
-                  <div className="it-footer-gallery-box">
+                  {/* <div className="it-footer-gallery-box">
                     <div className="row gx-10">
                       <div className="col-md-4 col-4">
                         <div className="it-footer-thumb mb-10">
@@ -204,7 +199,7 @@ const FooterTwo = (props) => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div

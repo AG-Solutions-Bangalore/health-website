@@ -1,12 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
-import homeImg1 from '../../assets/img/menu/home-1.jpg';
-import homeImg2 from '../../assets/img/menu/home-2.jpg';
-import homeImg3 from '../../assets/img/menu/home-3.jpg';
-import homeImg4 from '../../assets/img/menu/home-4.jpg';
-import homeImg5 from '../../assets/img/menu/home-5.jpg';
-
 const MenuItemsOnePage = (props) => {
   const { parentMenu, onePageStyle, mobileMenu } = props;
   const [home, setHome] = useState(false);
@@ -49,17 +42,15 @@ const MenuItemsOnePage = (props) => {
       >
         <span>Home</span>
         <button
-          className={`${
-            home ? 'dropdown-toggle-btn dropdown-opened' : 'dropdown-toggle-btn'
-          } d-xl-none `}
+          className={` d-xl-none `}
           onClick={() => {
             openMobileMenu('home');
           }}
         >
-          <i className="fal fa-angle-right"></i>
+          {/* <i className="fal fa-angle-right"></i> */}
         </button>
       </Link>
-      <div
+      {/* <div
         className={
           home
             ? 'it-submenu submenu has-home-img d-block'
@@ -98,7 +89,7 @@ const MenuItemsOnePage = (props) => {
                 </Link>
                 <Link
                   className="it-btn-white-sm"
-                  to="/home-2-one-page"
+                  // to="/home-2-one-page"
                   onClick={() => setIsActive('home')}
                 >
                   One Page
@@ -178,7 +169,7 @@ const MenuItemsOnePage = (props) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </li>
   );
 
@@ -189,7 +180,7 @@ const MenuItemsOnePage = (props) => {
           {onePageHomeMenu}
           <li className={isActive === 'it-course' ? 'active' : ''}>
             <Link to="#it-course" onClick={() => scrollToSection('it-course')}>
-              <span>Courses</span>
+              <span>Courses1</span>
             </Link>
           </li>
           <li className={isActive === 'it-about' ? 'active' : ''}>
@@ -226,7 +217,7 @@ const MenuItemsOnePage = (props) => {
           </li>
           <li className={isActive === 'it-course' ? 'active' : ''}>
             <Link to="#it-course" onClick={() => scrollToSection('it-course')}>
-              <span>Courses</span>
+              <span>Courses2</span>
             </Link>
           </li>
           <li className={isActive === 'it-event' ? 'active' : ''}>
@@ -246,6 +237,7 @@ const MenuItemsOnePage = (props) => {
           </li>
         </ul>
       ) : onePageStyle === 'onePage3' ? (
+        //this apge is rendering in the navbar
         <ul className="onepage-menu">
           {onePageHomeMenu}
           <li className={isActive === 'it-about' ? 'active' : ''}>
@@ -327,7 +319,7 @@ const MenuItemsOnePage = (props) => {
           </li>
           <li className={isActive === 'it-course' ? 'active' : ''}>
             <Link to="#it-course" onClick={() => scrollToSection('it-course')}>
-              <span>Courses</span>
+              <span>Courses4</span>
             </Link>
           </li>
           <li className={isActive === 'it-faq' ? 'active' : ''}>

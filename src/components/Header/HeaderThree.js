@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import MenuItems from "./MenuItems";
 import MenuItemsOnePage from "./MenuItemsOnePage";
 import Logo from "../../assets/img/logo/logo-white-3.png";
-import OffCanvasInsta from "../OffCanvas";
 
 const HeaderThree = (props) => {
   const { headerClass, headerLogo, onePage, parentMenu } = props;
@@ -54,14 +52,10 @@ const HeaderThree = (props) => {
                   <div className="col-xl-6 d-none d-xl-block">
                     <div className="ed-header-2-main-menu it-main-menu">
                       <nav className="it-menu-content">
-                        {!onePage ? (
-                          <MenuItems />
-                        ) : (
-                          <MenuItemsOnePage
-                            parentMenu={parentMenu}
-                            onePageStyle="onePage3"
-                          />
-                        )}
+                        <MenuItemsOnePage
+                          parentMenu={parentMenu}
+                          onePageStyle="onePage3"
+                        />
                       </nav>
                     </div>
                   </div>
@@ -88,55 +82,6 @@ const HeaderThree = (props) => {
                           </svg>
                         </button>
                       </div>
-                      {/* <div className="ed-header-3-shop ml-25 d-none d-lg-block">
-                        <Link to="/cart">
-                          <span>
-                            <svg
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M7.5 7.67V6.7C7.5 4.45 9.31 2.24 11.56 2.03C14.24 1.77 16.5 3.88 16.5 6.51V7.89"
-                                stroke="currentcolor"
-                                strokeWidth="1.5"
-                                strokeMiterlimit="10"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              />
-                              <path
-                                d="M9.00007 22H15.0001C19.0201 22 19.7401 20.39 19.9501 18.43L20.7001 12.43C20.9701 9.99 20.2701 8 16.0001 8H8.00007C3.73007 8 3.03007 9.99 3.30007 12.43L4.05007 18.43C4.26007 20.39 4.98007 22 9.00007 22Z"
-                                stroke="currentcolor"
-                                strokeWidth="1.5"
-                                strokeMiterlimit="10"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              />
-                              <path
-                                d="M15.4955 12H15.5045"
-                                stroke="currentcolor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              />
-                              <path
-                                d="M8.49451 12H8.50349"
-                                stroke="currentcolor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              />
-                            </svg>
-                          </span>
-                        </Link>
-                      </div> */}
-                      {/* <div className="ed-header-3-button d-none d-lg-block">
-                        <Link className="ed-btn-square" to="/contact">
-                          get a free quote
-                        </Link>
-                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -169,15 +114,11 @@ const HeaderThree = (props) => {
             </p>
           </div>
           <div className="it-menu-mobile d-xl-none">
-            {!onePage ? (
-              <MenuItems mobileMenu="show" />
-            ) : (
-              <MenuItemsOnePage
-                parentMenu={parentMenu}
-                onePageStyle="onePage3"
-                mobileMenu="show"
-              />
-            )}
+            <MenuItemsOnePage
+              parentMenu={parentMenu}
+              onePageStyle="onePage3"
+              mobileMenu="show"
+            />
           </div>
           <div className="itoffcanvas__info">
             <h3 className="offcanva-title">Get In Touch</h3>
@@ -220,7 +161,6 @@ const HeaderThree = (props) => {
               </div>
             </div>
           </div>
-          <OffCanvasInsta />
         </div>
       </div>
 
