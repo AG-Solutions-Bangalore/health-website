@@ -15,6 +15,7 @@ import VitalsMonitor from "./VitalsMonitor";
 import PointofCare from "./PointofCare";
 import VitalSignMonitor from "./VitalSignMonitor";
 import FaqDropDown from "./FaqDropDown";
+import RealTimeData from "./RealTimeData";
 
 const HomeThreeMain = () => {
   return (
@@ -25,6 +26,14 @@ const HomeThreeMain = () => {
       <PointofCare />
       <VitalSignMonitor />
       <FaqDropDown />
+      <RealTimeData />
+
+
+
+
+
+
+
 
       <Category />
       <About />
