@@ -47,14 +47,14 @@ const PointofCare = () => {
             <div className="it-about-3-title-box">
               <div className="it-choose-content">
                 <h2 className="it-section-title-3 pb-30">Point of Care</h2>{" "}
-                <h5>
+                <h5 style={{ textAlign: "justify" }}>
                   <i className="fa-solid fa-circle-check"></i>This mode can be
                   used by clinicians caring for multiple patients. In this mode,
                   the Vitals360 vital signs monitor replaces a number of
                   separate medical devices, making it ideal for care both inside
                   and outside of an office or facility.
                 </h5>
-                <h5>
+                <h5 style={{ textAlign: "justify" }}>
                   <i className="fa-solid fa-circle-check"></i>Unlike other
                   medical devices that require manual entry of data, the
                   Vitals360 patient monitors can be linked directly to the
@@ -62,7 +62,7 @@ const PointofCare = () => {
                   connectivity to allow patient monitor data to be automatically
                   uploaded after every use.
                 </h5>
-                <h5>
+                <h5 style={{ textAlign: "justify" }}>
                   <i className="fa-solid fa-circle-check"></i>Additionally, the
                   Vitals360’s GPS location and time-stamping provide a superior
                   audit trail for Medicare reimbursement.
@@ -93,12 +93,12 @@ const PointofCare = () => {
                   <i className="fa-solid fa-circle-check"></i>What we monitor:
                   Pulse, Oximetry, Blood Pressure, EKG,
                 </h5>
-                <h5>
+                <h5 style={{ textAlign: "justify" }}>
                   <i className="fa-solid fa-circle-check"></i>Temperature, and
                   Weight (device also measures blood glucose-not yet available
                   in the United States).
                 </h5>
-                <h5>
+                <h5 style={{ textAlign: "justify" }}>
                   <i className="fa-solid fa-circle-check"></i>In Remote Mode,
                   patients can use the Vitals360’s® video feature to conduct
                   convenient tele-health visits right on the device.
@@ -176,7 +176,7 @@ const PointofCare = () => {
                   <i className="fa-solid fa-circle-check"></i>WiFi (when LTE is
                   not available)
                 </h5>
-                <h5>
+                <h5 style={{ textAlign: "justify" }}>
                   <i className="fa-solid fa-circle-check"></i>Cloud Integration
                   services through partners, including Application Programming
                   Interfaces (API), an FDA listed Class I Medical Device Data

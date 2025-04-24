@@ -27,8 +27,8 @@ const SectionTitle = (props) => {
       <h4 className={titleClass ? titleClass : "ed-section-title"}>
         {title ? title : "Browse By Categories"}
       </h4>
-      <p>{description ? description : ""}</p>
-      <p>{description1 ? description1 : ""}</p>
+      <p style={{ textAlign: "justify" }}>{description ? description : ""}</p>
+      <p style={{ textAlign: "justify" }}>{description1 ? description1 : ""}</p>
     </div>
   );
 };

@@ -34,7 +34,7 @@ const HeaderThree = (props) => {
            
           `}
         >
-          <div className="ed-header-3-area">
+          <div className="ed-header-3-area ">
             <div className="container">
               <div className="ed-header-3-wrapper">
                 <div className="row align-items-center">
@@ -104,7 +104,11 @@ const HeaderThree = (props) => {
           </div>
           <div className="itoffcanvas__logo">
             <Link to="/">
-              <img src={Logo} alt="" />
+              <img
+                src={Logo}
+                alt=""
+                style={{ width: "250px", height: "auto" }}
+              />
             </Link>
           </div>
           <div className="itoffcanvas__text">
@@ -130,7 +134,7 @@ const HeaderThree = (props) => {
               </div>
               <div className="itoffcanvas__info-address">
                 <span>Email</span>
-                <a href="maito:hello@yourmail.com">hello@yourmail.com</a>
+                <a href="maito:sales@vocare.com">sales@vocare.com</a>
               </div>
             </div>
             <div className="it-info-wrapper mb-20 d-flex align-items-center">
@@ -141,7 +145,7 @@ const HeaderThree = (props) => {
               </div>
               <div className="itoffcanvas__info-address">
                 <span>Phone</span>
-                <a href="tel:(00)45611227890">(00) 456 1122 7890</a>
+                <a href="tel:+918557566766">(+91) 8557566766</a>
               </div>
             </div>
             <div className="it-info-wrapper mb-20 d-flex align-items-center">
@@ -156,7 +160,7 @@ const HeaderThree = (props) => {
                   href="htits://www.google.com/maps/@37.4801311,22.8928877,3z"
                   target="_blank"
                 >
-                  Riverside 255, San Francisco.
+                  {/* Riverside 255, San Francisco. */}
                 </a>
               </div>
             </div>
