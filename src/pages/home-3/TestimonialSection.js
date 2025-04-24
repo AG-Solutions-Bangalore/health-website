@@ -1,96 +1,78 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper/modules';
-import SingleTestimonialTwo from '../../components/Testimonial/SingleTestimonialTwo';
-
-import testimonialBG from '../../assets/img/testimonial/bg-2.png';
-import testimonialBG2 from '../../assets/img/testimonial/bg-4.png';
-import testimonialImg from '../../assets/img/testimonial/thumb-3.png';
-import shapeImg from '../../assets/img/testimonial/shape-3-1.png';
-import quoteImg from '../../assets/img/testimonial/quot.png';
-import avatarImg1 from '../../assets/img/avatar/avatar-3-1.png';
-import avatarImg2 from '../../assets/img/avatar/avatar-2.png';
-import avatarImg3 from '../../assets/img/avatar/avatar-1.png';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import SectionTitle from "../../components/SectionTitle";
+import SingleTestimonialThree from "../../components/Testimonial/SingleTestimonialThree";
 
 const Testimonial = () => {
   const sliderOption = {
-    speed: 500,
+    speed: 1500,
     loop: true,
-    slidesPerView: '1',
-    spaceBetween: 30,
+    slidesPerView: "3",
+    spaceBetween: 50,
     autoplay: {
-      delay: 3000,
+      delay: 5000,
     },
-    centeredSlides: true,
-    roundLengths: true,
-    pagination: {
-      el: '.test-slider-dots',
-      clickable: true,
+    breakpoints: {
+      1400: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 2,
+      },
+      0: {
+        slidesPerView: 1,
+      },
     },
   };
   return (
     <div
-      className="it-testimonial-3-area fix"
-      style={{ backgroundImage: `url(${testimonialBG})` }}
+      className="it-testimonial-area ed-testimonial-style-2 pt-120 pb-120 fix p-relative"
+      id="it-testimonials"
     >
       <div className="container">
-        <div className="row align-items-center">
-          <div className="col-xl-5 col-lg-4 d-none d-lg-block">
-            <div className="it-testimonial-3-thumb">
-              <img src={testimonialImg} alt="" />
+        <div className="it-testimonial-title-wrap mb-65">
+          <div className="row justify-content-center">
+            <div className="col-xl-6">
+              <SectionTitle
+                itemClass="it-testimonial-title-box text-center"
+                subTitleClass="ed-section-subtitle"
+                subTitle="testimonial"
+                titleClass="ed-section-title"
+                title="Still not convinced?"
+              />
+              <h2 className="text-center">Hear what our clients had to say</h2>
             </div>
           </div>
-          <div className="col-xl-7 col-lg-8">
-            <div className="it-testimonial-3-box z-index p-relative">
-              <div className="it-testimonial-3-shape-1">
-                <img src={shapeImg} alt="" />
-              </div>
-              <div
-                className="it-testimonial-3-wrapper p-relative"
-                style={{ backgroundImage: `url(${testimonialBG2})` }}
-              >
-                <div className="it-testimonial-3-quote d-none d-md-block">
-                  <img src={quoteImg} alt="" />
-                </div>
-                <div className="swiper-container ">
-                  <Swiper
-                    modules={[Autoplay, Pagination]}
-                    {...sliderOption}
-                    className="swiper-wrapper it-testimonial-3-active"
-                  >
-                    <SwiperSlide className="swiper-slide">
-                      <SingleTestimonialTwo
-                        authorAvatar={avatarImg1}
-                        authorName="Jorge Carter"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                          ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit."
-                        designation="Software Developer"
-                      />
-                    </SwiperSlide>
-                    <SwiperSlide className="swiper-slide">
-                      <SingleTestimonialTwo
-                        authorAvatar={avatarImg2}
-                        authorName="Gloria Burnett"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                          ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit."
-                        designation="Software Developer"
-                      />
-                    </SwiperSlide>
-                    <SwiperSlide className="swiper-slide">
-                      <SingleTestimonialTwo
-                        authorAvatar={avatarImg3}
-                        authorName="Laurie Duncanr"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                          ut aliquipLorem ipsum dolor sit amet, consectetur adipiscing elit."
-                        designation="Software Developer"
-                      />
-                    </SwiperSlide>
-                  </Swiper>
-                </div>
-                <div className="test-slider-dots d-none d-sm-block"></div>
+        </div>
+        <div className="row">
+          <div className="col-xl-12">
+            <div className="ed-testimonial-wrapper">
+              <div className="swiper-container ed-testimonial-active">
+                <Swiper
+                  modules={[Autoplay]}
+                  {...sliderOption}
+                  className="swiper-wrapper"
+                >
+                  <SwiperSlide className="swiper-slide">
+                    <SingleTestimonialThree
+                      description={`The Vocare Vitals V360 state-of-the-art technology is the champion of our value based healthcare. - CEO, Health & Wellness Company`}
+                      authorName="CEO, Health and Wellness Company"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide className="swiper-slide">
+                    <SingleTestimonialThree
+                      description={`Six vital signs, Mobile with accurate reads. Also, easy to operate, connect and clean. - VP, Medical Device Distributor`}
+                      authorName="VP, Medical Device Distributor"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide className="swiper-slide">
+                    <SingleTestimonialThree
+                      description={`All these professional tools in one portable package. The telehealth quality is good. - Director, Home Health Reseller`}
+                      authorName="Director, Home Health Value Added Reseller"
+                    />
+                  </SwiperSlide>
+                </Swiper>
               </div>
             </div>
           </div>

@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import MenuItems from "./MenuItems";
 import MenuItemsOnePage from "./MenuItemsOnePage";
 import Logo from "../../assets/img/logo/logo-white-3.png";
-import OffCanvasInsta from "../OffCanvas";
 
 const HeaderThree = (props) => {
   const { headerClass, headerLogo, onePage, parentMenu } = props;
@@ -36,7 +34,7 @@ const HeaderThree = (props) => {
            
           `}
         >
-          <div className="ed-header-3-area">
+          <div className="ed-header-3-area ">
             <div className="container">
               <div className="ed-header-3-wrapper">
                 <div className="row align-items-center">
@@ -51,23 +49,26 @@ const HeaderThree = (props) => {
                       </Link>
                     </div>
                   </div>
-                  <div className="col-xl-6 d-none d-xl-block">
-                    <div className="ed-header-2-main-menu it-main-menu">
+                  <div
+                    className="col-xl-6 d-none d-xl-block"
+                    style={{ display: "flex", justifyContent: "center" }}
+                  >
+                    <div
+                      className="ed-header-2-main-menu it-main-menu"
+                      style={{ display: "flex", justifyContent: "center" }}
+                    >
                       <nav className="it-menu-content">
-                        {!onePage ? (
-                          <MenuItems />
-                        ) : (
-                          <MenuItemsOnePage
-                            parentMenu={parentMenu}
-                            onePageStyle="onePage3"
-                          />
-                        )}
+                        <MenuItemsOnePage
+                          parentMenu={parentMenu}
+                          onePageStyle="onePage3"
+                        />
                       </nav>
                     </div>
                   </div>
-                  <div className="col-xl-3 col-lg-6 col-md-6 col-6">
+                  {/* 
+                  <div className="col-xl-2 col-lg-5 col-md-5 col-5">
                     <div className="ed-header-3-right d-flex justify-content-end align-items-center">
-                      <div className="ed-header-3-bar d-xl-none">
+                      <div className="ed-header-3-bar ">
                         <button
                           className="it-menu-bar"
                           onClick={() => setIsOffCanvasOpen(true)}
@@ -88,55 +89,31 @@ const HeaderThree = (props) => {
                           </svg>
                         </button>
                       </div>
-                      {/* <div className="ed-header-3-shop ml-25 d-none d-lg-block">
-                        <Link to="/cart">
-                          <span>
-                            <svg
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M7.5 7.67V6.7C7.5 4.45 9.31 2.24 11.56 2.03C14.24 1.77 16.5 3.88 16.5 6.51V7.89"
-                                stroke="currentcolor"
-                                strokeWidth="1.5"
-                                strokeMiterlimit="10"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              />
-                              <path
-                                d="M9.00007 22H15.0001C19.0201 22 19.7401 20.39 19.9501 18.43L20.7001 12.43C20.9701 9.99 20.2701 8 16.0001 8H8.00007C3.73007 8 3.03007 9.99 3.30007 12.43L4.05007 18.43C4.26007 20.39 4.98007 22 9.00007 22Z"
-                                stroke="currentcolor"
-                                strokeWidth="1.5"
-                                strokeMiterlimit="10"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              />
-                              <path
-                                d="M15.4955 12H15.5045"
-                                stroke="currentcolor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              />
-                              <path
-                                d="M8.49451 12H8.50349"
-                                stroke="currentcolor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              />
-                            </svg>
-                          </span>
-                        </Link>
-                      </div> */}
-                      {/* <div className="ed-header-3-button d-none d-lg-block">
-                        <Link className="ed-btn-square" to="/contact">
-                          get a free quote
-                        </Link>
-                      </div> */}
+                    </div>
+                  </div> */}
+                  <div className="col-xl-2 col-lg-5 col-md-5 col-5">
+                    <div className="ed-header-3-right d-flex justify-content-end align-items-center">
+                      <div className="ed-header-3-bar">
+                        <button
+                          className="it-menu-bar"
+                          onClick={() => setIsOffCanvasOpen(true)}
+                        >
+                          <svg
+                            width="24"
+                            height="20"
+                            viewBox="0 0 24 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              clipRule="evenodd"
+                              d="M10 18.3333C10 17.4128 10.7462 16.6667 11.6667 16.6667H21.6667C22.5872 16.6667 23.3333 17.4128 23.3333 18.3333C23.3333 19.2538 22.5872 20 21.6667 20H11.6667C10.7462 20 10 19.2538 10 18.3333ZM0 1.66667C0 0.746183 0.746183 0 1.66667 0H21.6667C22.5872 0 23.3333 0.746183 23.3333 1.66667C23.3333 2.58713 22.5872 3.33333 21.6667 3.33333H1.66667C0.746183 3.33333 0 2.58713 0 1.66667ZM0 10C0 9.07953 0.746183 8.33333 1.66667 8.33333H21.6667C22.5872 8.33333 23.3333 9.07953 23.3333 10C23.3333 10.9205 22.5872 11.6667 21.6667 11.6667H1.66667C0.746183 11.6667 0 10.9205 0 10Z"
+                              fill="#ffffff"
+                            />
+                          </svg>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -159,7 +136,11 @@ const HeaderThree = (props) => {
           </div>
           <div className="itoffcanvas__logo">
             <Link to="/">
-              <img src={Logo} alt="" />
+              <img
+                src={Logo}
+                alt=""
+                style={{ width: "250px", height: "auto" }}
+              />
             </Link>
           </div>
           <div className="itoffcanvas__text">
@@ -169,15 +150,11 @@ const HeaderThree = (props) => {
             </p>
           </div>
           <div className="it-menu-mobile d-xl-none">
-            {!onePage ? (
-              <MenuItems mobileMenu="show" />
-            ) : (
-              <MenuItemsOnePage
-                parentMenu={parentMenu}
-                onePageStyle="onePage3"
-                mobileMenu="show"
-              />
-            )}
+            <MenuItemsOnePage
+              parentMenu={parentMenu}
+              onePageStyle="onePage3"
+              mobileMenu="show"
+            />
           </div>
           <div className="itoffcanvas__info">
             <h3 className="offcanva-title">Get In Touch</h3>
@@ -189,7 +166,7 @@ const HeaderThree = (props) => {
               </div>
               <div className="itoffcanvas__info-address">
                 <span>Email</span>
-                <a href="maito:hello@yourmail.com">hello@yourmail.com</a>
+                <a href="maito:sales@vocare.com">sales@vocare.com</a>
               </div>
             </div>
             <div className="it-info-wrapper mb-20 d-flex align-items-center">
@@ -200,7 +177,7 @@ const HeaderThree = (props) => {
               </div>
               <div className="itoffcanvas__info-address">
                 <span>Phone</span>
-                <a href="tel:(00)45611227890">(00) 456 1122 7890</a>
+                <a href="tel:+918557566766">(+91) 8557566766</a>
               </div>
             </div>
             <div className="it-info-wrapper mb-20 d-flex align-items-center">
@@ -215,12 +192,11 @@ const HeaderThree = (props) => {
                   href="htits://www.google.com/maps/@37.4801311,22.8928877,3z"
                   target="_blank"
                 >
-                  Riverside 255, San Francisco.
+                  {/* Riverside 255, San Francisco. */}
                 </a>
               </div>
             </div>
           </div>
-          <OffCanvasInsta />
         </div>
       </div>
 

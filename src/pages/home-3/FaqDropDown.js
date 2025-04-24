@@ -1,9 +1,6 @@
 import React from "react";
 import FaqOne from "../../components/Faq";
-import SectionTitle from "../../components/SectionTitle";
 
-import faqMainImg from "../../assets/img/faq/faq-2.jpg";
-import faqImg from "../../assets/img/faq/thumb-2.jpg";
 
 const FaqDropDown = () => {
   const items = [

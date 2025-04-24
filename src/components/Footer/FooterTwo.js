@@ -1,14 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import footerBG from '../../assets/img/footer/bg-1-1.jpg';
-import Logo from '../../assets/img/logo/logo-white-2.png';
-import footerImg1 from '../../assets/img/footer/thumb-1-1.png';
-import footerImg2 from '../../assets/img/footer/thumb-1-2.png';
-import footerImg3 from '../../assets/img/footer/thumb-1-3.png';
-import footerImg4 from '../../assets/img/footer/thumb-1-4.png';
-import footerImg5 from '../../assets/img/footer/thumb-1-5.png';
-import footerImg6 from '../../assets/img/footer/thumb-1-6.png';
+import footerBG from "../../assets/img/footer/bg-1-1.jpg";
+import Logo from "../../assets/img/logo/logo-white-3.png";
 
 const FooterTwo = (props) => {
   const { footerClass, footerLogo, btnClass, copyrightTextClass } = props;
@@ -19,7 +13,7 @@ const FooterTwo = (props) => {
         className={
           footerClass
             ? footerClass
-            : 'it-footer-area it-footer-bg it-footer-style-5 ed-footer-style-2 black-bg pb-70'
+            : "it-footer-area it-footer-bg it-footer-style-5 ed-footer-style-2 black-bg pb-70"
         }
         style={{ backgroundImage: `url(${footerBG})` }}
       >
@@ -38,9 +32,7 @@ const FooterTwo = (props) => {
                     <a
                       target="_blank"
                       href="https://www.google.com/maps/@25.1314121,87.0325089,8.83z?entry=ttu"
-                    >
-                      1925 Boggess Street
-                    </a>
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -52,8 +44,8 @@ const FooterTwo = (props) => {
                     </span>
                   </div>
                   <div className="it-footer-top-text">
-                    <span>Phone:</span>
-                    <a href="tel:00875784568">(00) 875 784 568</a>
+                    <span>Phone: </span>
+                    <a href="tel:+918557566766">(+91) 85575 66766</a>
                   </div>
                 </div>
               </div>
@@ -66,7 +58,7 @@ const FooterTwo = (props) => {
                   </div>
                   <div className="it-footer-top-text">
                     <span>Email:</span>
-                    <a href="mailto:info@gmail.com">info@gmail.com</a>
+                    <a href="mailto:sales@vocare.com">sales@vocare.com</a>
                   </div>
                 </div>
               </div>
@@ -84,29 +76,26 @@ const FooterTwo = (props) => {
                 <div className="it-footer-widget footer-col-5">
                   <div className="it-footer-logo pb-25">
                     <Link to="/">
-                      <img src={footerLogo ? footerLogo : Logo} alt="" />
+                      <img
+                        src={footerLogo ? footerLogo : Logo}
+                        alt=""
+                        style={{ width: "250px", height: "auto" }}
+                      />
                     </Link>
                   </div>
                   <div className="it-footer-text pb-5">
                     <p>
-                      Interdum velit laoreet id donec ultrices <br />
-                      tincidunt arcu. Tincidunt tortor aliqua <br />
-                      mfacilisi cras fermentum odio eu.
+                      FDA 510k 6 in 1 Multi <br></br> Vital Monitoring Device
                     </p>
                   </div>
                   <div className="it-footer-social">
-                    <a href="#">
+                    <a href="https://www.facebook.com/MyVoCare">
                       <i className="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="#">
-                      <i className="fa-brands fa-instagram"></i>
+                    <a href="https://www.linkedin.com/company/vocare-inc">
+                      <i className="fa-brands fa-linkedin"></i>
                     </a>
-                    <a href="#">
-                      <i className="fa-brands fa-pinterest-p"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fa-brands fa-twitter"></i>
-                    </a>
+                  
                   </div>
                 </div>
               </div>
@@ -116,36 +105,31 @@ const FooterTwo = (props) => {
                 data-wow-delay=".5s"
               >
                 <div className="it-footer-widget footer-col-6">
-                  <h4 className="it-footer-title">our services:</h4>
+                  <h4 className="it-footer-title">NEED HELP? </h4>
                   <div className="it-footer-list">
                     <ul>
                       <li>
                         <a href="#">
-                          <i className="fa-regular fa-angle-right"></i>Web
-                          development
+                          <i className="fa-regular fa-angle-right"></i>
+                          Support
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <i className="fa-regular fa-angle-right"></i>UI/UX
-                          Design
+                          <i className="fa-regular fa-angle-right"></i>Get
+                          Started
                         </a>
                       </li>
                       <li>
                         <a href="#">
                           <i className="fa-regular fa-angle-right"></i>
-                          Management
+                          Terms of Use
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <i className="fa-regular fa-angle-right"></i>Digital
-                          Marketing
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fa-regular fa-angle-right"></i>Blog News
+                          <i className="fa-regular fa-angle-right"></i>Privacy
+                          Policy
                         </a>
                       </li>
                     </ul>
@@ -157,53 +141,29 @@ const FooterTwo = (props) => {
                 data-wow-duration=".9s"
                 data-wow-delay=".7s"
               >
-                <div className="it-footer-widget footer-col-4">
-                  <h4 className="it-footer-title">Gallery</h4>
-                  <div className="it-footer-gallery-box">
-                    <div className="row gx-10">
-                      <div className="col-md-4 col-4">
-                        <div className="it-footer-thumb mb-10">
-                          <a href="#">
-                            <img src={footerImg1} alt="" />
-                          </a>
-                        </div>
-                      </div>
-                      <div className="col-md-4 col-4">
-                        <div className="it-footer-thumb mb-10">
-                          <a href="#">
-                            <img src={footerImg2} alt="" />
-                          </a>
-                        </div>
-                      </div>
-                      <div className="col-md-4 col-4 mb-10">
-                        <div className="it-footer-thumb">
-                          <a href="#">
-                            <img src={footerImg3} alt="" />
-                          </a>
-                        </div>
-                      </div>
-                      <div className="col-md-4 col-4">
-                        <div className="it-footer-thumb">
-                          <a href="#">
-                            <img src={footerImg4} alt="" />
-                          </a>
-                        </div>
-                      </div>
-                      <div className="col-md-4 col-4">
-                        <div className="it-footer-thumb">
-                          <a href="#">
-                            <img src={footerImg5} alt="" />
-                          </a>
-                        </div>
-                      </div>
-                      <div className="col-md-4 col-4">
-                        <div className="it-footer-thumb">
-                          <a href="#">
-                            <img src={footerImg6} alt="" />
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+                <div className="it-footer-widget footer-col-6">
+                  <h4 className="it-footer-title">LEARN MORE ? </h4>
+                  <div className="it-footer-list">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <i className="fa-regular fa-angle-right"></i>
+                          Certifications
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i className="fa-regular fa-angle-right"></i>Product
+                          Resources
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i className="fa-regular fa-angle-right"></i>
+                          Demo Videos
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -221,7 +181,7 @@ const FooterTwo = (props) => {
                       placeholder="Enter your email:"
                     />
                     <button
-                      className={btnClass ? btnClass : 'it-btn-white sky-bg'}
+                      className={btnClass ? btnClass : "it-btn-white sky-bg"}
                     >
                       <span>SUBSCRIBE NOW</span>
                     </button>
@@ -245,11 +205,12 @@ const FooterTwo = (props) => {
                 className={
                   copyrightTextClass
                     ? copyrightTextClass
-                    : 'it-copyright-text style-2 text-center'
+                    : "it-copyright-text style-2 text-center"
                 }
               >
                 <p>
-                  Copyright &copy; 2024 <a href="#">edunity </a> || All Rights
+                  Copyright &copy; 2025{" "}
+                  <a href="#">VoCare Vital Signs Monitor</a> || All Rights
                   Reserved
                 </p>
               </div>

@@ -12,13 +12,14 @@ const VitalSignMonitor = () => {
         backgroundPosition: "center",
       }}
     >
-      <div
+      {/* <div
         className="row align-items-center "
         style={{
           paddingRight: "4rem",
           paddingLeft: "4rem",
         }}
-      >
+      > */}
+      <div className="row align-items-center px-3 px-md-5">
         <div
           className="col-xl-4 col-lg-4 wow animate__fadeInLeft"
           data-wow-duration=".9s"
@@ -45,6 +46,7 @@ const VitalSignMonitor = () => {
             <p
               style={{
                 fontSize: "13px",
+                textAlign: "justify",
               }}
             >
               The Vitals360® vital signs monitor device is designed to support
@@ -60,6 +62,7 @@ const VitalSignMonitor = () => {
             <p
               style={{
                 fontSize: "13px",
+                textAlign: "justify",
               }}
             >
               VoCare’s Vitals360® is the world’s first vital signs device to
@@ -74,6 +77,7 @@ const VitalSignMonitor = () => {
             <p
               style={{
                 fontSize: "13px",
+                textAlign: "justify",
               }}
             >
               The Vitals360® device can be connected to all major wireless
@@ -89,6 +93,7 @@ const VitalSignMonitor = () => {
             <p
               style={{
                 fontSize: "13px",
+                textAlign: "justify",
               }}
             >
               The Vitals360® device combines 6 medical peripherals into a single
