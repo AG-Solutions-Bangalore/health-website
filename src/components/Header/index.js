@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import MenuItems from "./MenuItems";
 import MenuItemsOnePage from "./MenuItemsOnePage";
 import RightArrow from "../SVG";
 import Logo from "../../assets/img/logo/logo-black.png";
@@ -184,17 +183,14 @@ const Header = (props) => {
                     </Link>
                   </div>
                 </div>
-                <div className="col-xxl-6 col-xl-7 col-lg-6 d-none d-xl-block">
+                <div className="col-xl-6 col-xl-7 col-lg-6 d-none d-xl-block">
                   <div className="ed-header-main-menu it-main-menu">
                     <nav className="it-menu-content">
-                      {!onePage ? (
-                        <MenuItems />
-                      ) : (
+                  
                         <MenuItemsOnePage
                           parentMenu={parentMenu}
                           onePageStyle="onePage1"
                         />
-                      )}
                     </nav>
                   </div>
                 </div>
@@ -260,15 +256,12 @@ const Header = (props) => {
             </p>
           </div>
           <div className="it-menu-mobile d-xl-none">
-            {!onePage ? (
-              <MenuItems mobileMenu="show" />
-            ) : (
+        
               <MenuItemsOnePage
                 parentMenu={parentMenu}
                 onePageStyle="onePage1"
                 mobileMenu="show"
               />
-            )}
           </div>
           <div className="itoffcanvas__info">
             <h3 className="offcanva-title">Get In Touch</h3>

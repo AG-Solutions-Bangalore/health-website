@@ -26,7 +26,10 @@ const Testimonial = () => {
     },
   };
   return (
-    <div className="it-testimonial-area ed-testimonial-style-2 pt-120 pb-120 fix p-relative">
+    <div
+      className="it-testimonial-area ed-testimonial-style-2 pt-120 pb-120 fix p-relative"
+      id="it-testimonials"
+    >
       <div className="container">
         <div className="it-testimonial-title-wrap mb-65">
           <div className="row justify-content-center">
