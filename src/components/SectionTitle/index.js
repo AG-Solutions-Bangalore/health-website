@@ -16,7 +16,7 @@ const SectionTitle = (props) => {
   return (
     <div
       className={
-        itemClass ? itemClass : "ed-category-title-box text-center mb-70"
+        itemClass ? itemClass : "ed-category-title-box text-center mb-70 "
       }
     >
       <span className={subTitleClass ? subTitleClass : "ed-section-subtitle"}>

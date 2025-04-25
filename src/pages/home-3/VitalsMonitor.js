@@ -55,9 +55,17 @@ const VitalsMonitor = () => {
       <div className="ed-about-3-shape-2">
         <img src={shapeImg1} alt="" />
       </div>
-      <div className="container">
+      <div
+        className="container  wow animate__fadeInUp"
+        data-wow-duration=".9s"
+        data-wow-delay=".5s"
+      >
         <div className="row g-4">
-          <div className="col-md-6">
+          <div
+            className="col-md-6 wow animate__fadeInUp"
+            data-wow-duration=".9s"
+            data-wow-delay=".5s"
+          >
             <SectionTitle
               itemClass="it-about-3-title-box"
               subTitleClass="it-section-subtitle-5 purple-2"
@@ -70,7 +78,11 @@ const VitalsMonitor = () => {
             />
           </div>
 
-          <div className="col-md-6">
+          <div
+            className="col-md-6 wow animate__fadeInRight"
+            data-wow-duration=".9s"
+            data-wow-delay=".5s"
+          >
             <div className="it-about-3-mv-box">
               <div className="row">
                 {items.map((item, index) => (

@@ -72,6 +72,24 @@ const Testimonial = () => {
                       authorName="Director, Home Health Value Added Reseller"
                     />
                   </SwiperSlide>
+                  <SwiperSlide className="swiper-slide">
+                    <SingleTestimonialThree
+                      description={`The Vocare Vitals V360 state-of-the-art technology is the champion of our value based healthcare. - CEO, Health & Wellness Company`}
+                      authorName="CEO, Health and Wellness Company"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide className="swiper-slide">
+                    <SingleTestimonialThree
+                      description={`Six vital signs, Mobile with accurate reads. Also, easy to operate, connect and clean. - VP, Medical Device Distributor`}
+                      authorName="VP, Medical Device Distributor"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide className="swiper-slide">
+                    <SingleTestimonialThree
+                      description={`All these professional tools in one portable package. The telehealth quality is good. - Director, Home Health Reseller`}
+                      authorName="Director, Home Health Value Added Reseller"
+                    />
+                  </SwiperSlide>
                 </Swiper>
               </div>
             </div>

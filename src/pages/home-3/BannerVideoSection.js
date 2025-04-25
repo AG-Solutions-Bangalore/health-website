@@ -11,9 +11,9 @@ const Video = () => {
   return (
     <div>
       <ModalVideo
-        channel="youtube"
+        channel="vimeo"
         isOpen={isOpen}
-        videoId="PO_fBTkoznc"
+        videoId="654750066"
         onClose={() => openModal()}
       />
 
@@ -23,14 +23,13 @@ const Video = () => {
             <div className="it-video-content">
               <div className="d-md-flex align-items-md-center justify-content-md-between gap-md-4 py-3 d-block space-y-4">
                 <div className="flex-shrink-0 mb-3 mb-md-0 d-flex align-items-center justify-content-center rounded-circle">
-                  <Link className="ed-btn-square theme" to="/about-us">
+                  <Link className="ed-btn-square theme" to="/">
                     Contact Us
                   </Link>
                 </div>
-         
 
                 <p className="text-white flex-grow-1 mb-3 md:mb-0">
-                  How does the VoCare  Vitals V360 Mobile Vital Signs
+                  How does the VoCare Vitals V360 Mobile Vital Signs
                   Monitor Operate?
                 </p>
 

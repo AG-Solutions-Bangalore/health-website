@@ -50,6 +50,8 @@ const FunFact = () => {
                       end={counter.countNum}
                       duration={2}
                       counterSubText={counter.countSubtext}
+                      separator="" 
+            
                     />
                   </h4>
                   <p>{counter.countTitle}</p>

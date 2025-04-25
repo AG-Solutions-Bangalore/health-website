@@ -6,6 +6,7 @@ import Preloader from "../components/Preloader";
 import ScrollToTop from "../components/ScrollToTop";
 import LoadTop from "../components/ScrollToTop/LoadTop";
 import { Error, HomeThreeOnePage } from "../pages";
+import FloatingContact from "../pages/home-3/FloatingContact";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -26,8 +27,11 @@ function App() {
   return (
     <div className="App">
       {isLoading && <Preloader />}
+      <FloatingContact />
+
       <ScrollToTop />
       <LoadTop />
+
       <Routes>
         <Route path="/" element={<HomeThreeOnePage />} />
         <Route path="*" element={<Error />} />
