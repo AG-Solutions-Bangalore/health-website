@@ -20,7 +20,7 @@ const MenuItemsOnePage = (props) => {
   };
 
   const handleClick = (e) => {
-    if (!mobileMenu) {
+    if (!mobileMenu || mobileMenu) {
       window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
       e.preventDefault();
@@ -30,7 +30,7 @@ const MenuItemsOnePage = (props) => {
   const onePageHomeMenu = (
     <li
       className={
-        isActive === "home"
+        isActive == "home"
           ? "has-dropdown p-static active"
           : "has-dropdown p-static"
       }
@@ -41,14 +41,14 @@ const MenuItemsOnePage = (props) => {
         onClick={handleClick}
       >
         <span>Home</span>
-        <button
+        {/* <button
           className={` d-xl-none `}
           onClick={() => {
             openMobileMenu("home");
           }}
         >
-          {/* <i className="fal fa-angle-right"></i> */}
-        </button>
+          <i className="fal fa-angle-right"></i>
+        </button> */}
       </Link>
       {/* <div
         className={
@@ -246,7 +246,10 @@ const MenuItemsOnePage = (props) => {
             </Link>
           </li>
           <li className={isActive === "it-testimonials" ? "active" : ""}>
-            <Link to="#it-testimonials" onClick={() => scrollToSection("it-testimonials")}>
+            <Link
+              to="#it-testimonials"
+              onClick={() => scrollToSection("it-testimonials")}
+            >
               <span>Testimonial</span>
             </Link>
           </li>

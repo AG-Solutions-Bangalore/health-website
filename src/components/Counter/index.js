@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import VisibilitySensor from 'react-visibility-sensor';
-import CountUp from 'react-countup';
+import React, { useState } from "react";
+import VisibilitySensor from "react-visibility-sensor";
+import CountUp from "react-countup";
 
-const Counter = ({ start, end, duration, counterSubText }) => {
+const Counter = ({ start, end, duration, counterSubText, separator }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const onVisibilityChange = (visible) => {
@@ -20,7 +20,12 @@ const Counter = ({ start, end, duration, counterSubText }) => {
       {({ isVisible: sensorVisible }) => (
         <div>
           {sensorVisible || isVisible ? (
-            <CountUp start={start} end={end} duration={duration} />
+            <CountUp
+              start={start}
+              end={end}
+              duration={duration}
+              separator={separator}
+            />
           ) : (
             start
           )}

@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import bgImg from '../../assets/img/footer/bg-1-1.jpg';
-import Logo from '../../assets/img/logo/logo-white-3.png';
+import bgImg from "../../assets/img/footer/bg-1-1.jpg";
+import Logo from "../../assets/img/logo/logo-white-3.png";
 // import footerImg1 from '../../assets/img/footer/thumb-1-1.png';
 // import footerImg2 from '../../assets/img/footer/thumb-1-2.png';
 // import footerImg3 from '../../assets/img/footer/thumb-1-3.png';
@@ -19,7 +19,7 @@ const Footer = (props) => {
         className={
           footerClass
             ? footerClass
-            : 'it-footer-area it-footer-bg black-bg pt-120 pb-70'
+            : "it-footer-area it-footer-bg black-bg pt-120 pb-70"
         }
         style={{ backgroundImage: `url(${bgImg})` }}
       >
@@ -212,12 +212,12 @@ const Footer = (props) => {
                 className={
                   copyrightTextClass
                     ? copyrightTextClass
-                    : 'it-copyright-text text-center'
+                    : "it-copyright-text text-center"
                 }
               >
                 <p>
-                  Copyright &copy; 2024 <a href="#">edunity </a> || All Rights
-                  Reserved
+                  Copyright &copy; 2024 <a href="#">HealthCrae </a> || All
+                  Rights Reserved
                 </p>
               </div>
             </div>

@@ -61,7 +61,7 @@ const Header = (props) => {
                         target="_blank"
                         href="https://www.google.com/maps/@24.0161372,45.4773,7.67z?entry=ttu"
                       >
-                        238, Arimantab, Moska - USA.
+                        {/* 238, Arimantab, Moska - USA. */}
                       </a>
                     </li>
                   </ul>
@@ -186,11 +186,10 @@ const Header = (props) => {
                 <div className="col-xl-6 col-xl-7 col-lg-6 d-none d-xl-block">
                   <div className="ed-header-main-menu it-main-menu">
                     <nav className="it-menu-content">
-                  
-                        <MenuItemsOnePage
-                          parentMenu={parentMenu}
-                          onePageStyle="onePage1"
-                        />
+                      <MenuItemsOnePage
+                        parentMenu={parentMenu}
+                        onePageStyle="onePage1"
+                      />
                     </nav>
                   </div>
                 </div>
@@ -250,18 +249,19 @@ const Header = (props) => {
             </Link>
           </div>
           <div className="itoffcanvas__text">
-            <p>
-              Suspendisse interdum consectetur libero id. Fermentum leo vel orci
-              porta non. Euismod viverra nibh cras pulvinar suspen.
+            <p style={{ textAlign: "justify" }}>
+              The Vitals360 vital signs monitor device is designed to support
+              remote patient healthcare needs surrounding easy access to
+              patient’s care team, including easy to manage and low cost remote
+              patient monitoring.
             </p>
           </div>
           <div className="it-menu-mobile d-xl-none">
-        
-              <MenuItemsOnePage
-                parentMenu={parentMenu}
-                onePageStyle="onePage1"
-                mobileMenu="show"
-              />
+            <MenuItemsOnePage
+              parentMenu={parentMenu}
+              onePageStyle="onePage1"
+              mobileMenu="show"
+            />
           </div>
           <div className="itoffcanvas__info">
             <h3 className="offcanva-title">Get In Touch</h3>

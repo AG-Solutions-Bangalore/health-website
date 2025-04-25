@@ -17,7 +17,7 @@ const PointofCare = () => {
 
         <div className="row align-items-center">
           <div
-            className="col-xl-6 col-lg-6 wow animate__fadeInLeft"
+            className="col-xl-6 col-lg-6 wow animate__fadeInUp"
             data-wow-duration=".9s"
             data-wow-delay=".5s"
           >
@@ -109,7 +109,7 @@ const PointofCare = () => {
                 </h5>
               </div>
             </div>
-            <div className="it-about-3-title-box">
+            <div className="it-about-3-title-box mb-30">
               <div className="it-choose-content">
                 <h2 className="it-section-title-3 pb-30">Deployment</h2>{" "}
                 <h5>
@@ -141,7 +141,7 @@ const PointofCare = () => {
             </div>
           </div>
           <div
-            className="col-xl-6 col-lg-6 wow animate__fadeInLeft"
+            className="col-xl-6 col-lg-6 wow animate__fadeInUp"
             data-wow-duration=".9s"
             data-wow-delay=".5s"
           >
