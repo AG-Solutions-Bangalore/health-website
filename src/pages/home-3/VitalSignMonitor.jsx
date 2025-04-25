@@ -1,6 +1,7 @@
 import React from "react";
 import SectionTitle from "../../components/SectionTitle";
 import testimonialBG from "../../assets/img/product/bg-overview.jpg";
+import AnimatedOnScroll from "./AnimatedOnScroll";
 
 const VitalSignMonitor = () => {
   return (
@@ -27,7 +28,6 @@ const VitalSignMonitor = () => {
         >
           <div></div>
         </div>
-
         <div
           className="container col-xl-8 col-lg-8 wow animate__fadeInLeft"
           style={{
@@ -37,6 +37,8 @@ const VitalSignMonitor = () => {
             borderRadius: "12px",
           }}
         >
+          <AnimatedOnScroll animation="fadeInUp" delay={300}>
+
           <SectionTitle
             itemClass="it-team-title-box "
             subTitle="The Vitals360®"
@@ -103,6 +105,7 @@ const VitalSignMonitor = () => {
               USA), and Blood Oxygen Monitor.
             </p>
           </div>
+          </AnimatedOnScroll>
         </div>
       </div>
     </div>

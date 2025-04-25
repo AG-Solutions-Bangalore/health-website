@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import Logo from '../../assets/img/logo/pencil-upper.png';
-import Icon from '../../assets/img/logo/pencil.png';
+import Logo from "../../assets/img/logo/pencil-upper.png";
+import Icon from "../../assets/img/logo/pencil.png";
 
 const Preloader = () => {
   return (

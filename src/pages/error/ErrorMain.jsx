@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Breadcrumb from '../../components/Breadcrumb';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import errorImg from '../../assets/img/error/error.png';
+import errorImg from "../../assets/img/error/error.png";
+import Breadcrumb from "../../components/Breadcrumb";
 
 const ErrorMain = () => {
   return (
