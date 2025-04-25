@@ -49,7 +49,7 @@ const HeaderThree = (props) => {
                       </Link>
                     </div>
                   </div>
-                  
+
                   <div
                     className="col-xl-6 d-none d-xl-block"
                     style={{ display: "flex", justifyContent: "center" }}
@@ -66,7 +66,7 @@ const HeaderThree = (props) => {
                       </nav>
                     </div>
                   </div>
-                 
+
                   <div className="col-xl-2 col-lg-5 col-md-5 col-5">
                     <div className="ed-header-3-right d-flex justify-content-end align-items-center">
                       <div className="ed-header-3-bar">

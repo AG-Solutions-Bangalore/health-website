@@ -1,6 +1,6 @@
 import React from "react";
 import FaqOne from "../../components/Faq";
-
+import AnimatedOnScroll from "./AnimatedOnScroll";
 
 const FaqDropDown = () => {
   const items = [
@@ -39,9 +39,11 @@ const FaqDropDown = () => {
   return (
     <div id="it-faq" className="it-faq-area p-relative pt-120 pb-120">
       <div className="container">
-        <div className="it-faq-wrap">
-          <FaqOne items={items} />
-        </div>
+        <AnimatedOnScroll animation="fadeInLeft" delay={300}>
+          <div className="it-faq-wrap">
+            <FaqOne items={items} />
+          </div>
+        </AnimatedOnScroll>
       </div>
     </div>
   );
