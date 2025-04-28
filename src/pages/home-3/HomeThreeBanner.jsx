@@ -6,8 +6,9 @@ import PrevArrow from "../../components/SVG/PrevArrow";
 
 import shapeImg1 from "../../assets/img/slider/shape-3-2.png";
 import shapeImg2 from "../../assets/img/slider/shape-3-3.png";
-import sliderImg1 from "../../assets/img/slider/slider-1-1.jpg";
-import sliderImg2 from "../../assets/img/slider/slider-1-2.jpg";
+import sliderImg1 from "../../assets/img/slider/slider-1-1.jpeg";
+import sliderImg2 from "../../assets/img/slider/slider-1-2.jpeg";
+import sliderImg3 from "../../assets/img/slider/slider-1-3.jpeg";
 import BannerVideo from "./BannerVideoSection";
 
 const Banner = () => {
@@ -183,7 +184,7 @@ const Banner = () => {
                   <div
                     className="ed-slider-2-thumb"
                     style={{
-                      backgroundImage: `url(${sliderImg1})`,
+                      backgroundImage: `url(${sliderImg3})`,
                     }}
                   ></div>
                   <div className="container">
